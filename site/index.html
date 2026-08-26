@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="terminal">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BatteryOptimizer PRO ULTRA</title>
+<meta name="description" content="Un seul fichier .bat pour hiberner intelligemment, surveiller les coupures secteur en temps réel et optimiser la batterie de ton PC Windows. Sans installateur, sans service tiers.">
+<!-- <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E"> -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- ============================================================ -->
+<!-- EN-TETE                                                       -->
+<!-- ============================================================ -->
+<header class="site-header">
+  <div class="wrap header-bar">
+    <a class="brand" href="#top" aria-label="BatteryOptimizer PRO ULTRA, retour en haut de page">
+      <span class="brand-mark" aria-hidden="true">⚡</span>
+      <span class="brand-name">BatteryOptimizer<span class="brand-suffix"> PRO ULTRA</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#menu">Le menu</a>
+      <a href="#installation">Installation</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-github" href="https://github.com/Liferenew70/batterieoptimizer.git" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="theme-switcher" role="group" aria-label="Choisir un thème d'affichage">
+        <button type="button" class="theme-dot" data-theme-btn="terminal" aria-pressed="true" title="Thème Terminal Vert">
+          <span class="sr-only">Thème Terminal Vert</span>
+        </button>
+        <button type="button" class="theme-dot" data-theme-btn="ambre" aria-pressed="false" title="Thème Ambre Alerte">
+          <span class="sr-only">Thème Ambre Alerte</span>
+        </button>
+        <button type="button" class="theme-dot" data-theme-btn="jour" aria-pressed="false" title="Thème Jour Clair">
+          <span class="sr-only">Thème Jour Clair</span>
+        </button>
+        <button type="button" class="theme-dot" data-theme-btn="circuit" aria-pressed="false" title="Thème Circuit Cyan">
+          <span class="sr-only">Thème Circuit Cyan</span>
+        </button>
+      </div>
+
+      <a class="btn btn-primary btn-small" href="Hibernation_AND_BatterieOptimizer.bat" download>
+        <span aria-hidden="true">↓</span> Télécharger
+      </a>
+
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu de navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <!-- ============================================================ -->
+  <!-- HERO                                                          -->
+  <!-- ============================================================ -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker"><span aria-hidden="true">●</span> Script .bat unique — zéro installateur</p>
+        <h1>
+          Ton PC hiberne au bon moment.<br>
+          <span class="accent-text">Jamais par accident.</span>
+        </h1>
+        <p class="hero-lede">
+          BatteryOptimizer PRO ULTRA surveille l'inactivité et l'alimentation de ton
+          ordinateur Windows en continu : il hiberne pour économiser la batterie,
+          sauvegarde ton travail dès qu'une coupure de courant est détectée — et
+          annule tout automatiquement si tu rebranches le chargeur à temps.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="Hibernation_AND_BatterieOptimizer.bat" download>
+            <span aria-hidden="true">↓</span> Télécharger le .bat
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/Liferenew70/batterieoptimizer.git" target="_blank" rel="noopener">
+            Voir le code sur GitHub
+          </a>
+        </div>
+        <ul class="hero-badges">
+          <li>Windows 10 / 11</li>
+          <li>Aucune dépendance</li>
+          <li>Open source</li>
+          <li>100% en français</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="term-window term-hero">
+          <div class="term-titlebar">
+            <span class="term-icon">⚡</span>
+            <span class="term-title">Sélection Administrateur : BatteryOptimizer PRO ULTRA</span>
+            <span class="term-dots"><i></i><i></i><i></i></span>
+          </div>
+          <div class="term-body">
+            <pre class="term-typing" id="hero-typing" data-full-text="⚡ BatteryOptimizer PRO ULTRA — Hibernation Pure
+Aucune veille normale — Économie max &amp; Gardien Actif
+Compatible tous PC Windows 10/11
+
+[CONFIG ACTUELLE] Hibernation intelligente après : 20 minutes
+
+  [1] Configurer l'hibernation Intelligente
+  [2] Appliquer les optimisations batterie
+  [3] Hiberner MAINTENANT
+  [9] Gérer les seuils de court-circuit
+
+Votre choix : _"></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- BANDE DE CONFIANCE                                            -->
+  <!-- ============================================================ -->
+  <section class="trust-strip">
+    <div class="wrap trust-grid">
+      <div class="trust-item">
+        <span class="trust-num">1</span>
+        <span class="trust-label">fichier .bat, aucune installation</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-num">10</span>
+        <span class="trust-label">modules accessibles depuis un seul menu</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-num">13</span>
+        <span class="trust-label">optimisations batterie appliquées en un clic</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-num">0</span>
+        <span class="trust-label">service tiers installé sur ta machine</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- FONCTIONNALITES                                               -->
+  <!-- ============================================================ -->
+  <section class="section" id="fonctionnalites">
+    <div class="wrap">
+      <p class="eyebrow">Fonctionnalités</p>
+      <h2>Un gardien complet, pas un simple minuteur</h2>
+      <p class="section-lede">
+        Chaque fonctionnalité répond à un vrai problème rencontré sur un PC portable
+        au quotidien — pas une case cochée pour la forme.
+      </p>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🌙</div>
+          <h3>Hibernation pure</h3>
+          <p>Veille classique et hybride totalement désactivées. Seule l'hibernation réelle est utilisée : la RAM part sur le disque, l'alimentation est coupée, la batterie ne se décharge plus du tout.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⏱️</div>
+          <h3>Minuterie d'inactivité</h3>
+          <p>Configurable en secondes, minutes, heures ou heures:minutes. Une alerte visuelle de 30 secondes s'affiche avant l'hibernation, annulable au moindre geste sur la souris ou le clavier.</p>
+        </article>
+
+        <article class="feature-card feature-card-highlight">
+          <div class="feature-icon" aria-hidden="true">🔌</div>
+          <h3>Alerte coupure secteur en temps réel</h3>
+          <p>Le courant part ? Une fenêtre de confirmation apparaît avant de sauvegarder ton travail. Tu rebranches le chargeur pendant le décompte ? L'alerte se referme <strong>automatiquement</strong>, comme un clic sur « Non » — sans attendre la fin du compte à rebours.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🪫</div>
+          <h3>Seuils de batterie personnalisables</h3>
+          <p>Définis un délai de réaction différent selon le niveau de charge restant : plus la batterie est faible, plus la réaction est rapide. Ajoute, modifie ou supprime des seuils depuis le menu.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🖱️</div>
+          <h3>Réparation souris post-hibernation</h3>
+          <p>Corrige le bug USB classique qui rend la souris lente ou saccadée après un réveil d'hibernation, en une passe automatisée sur le registre et le service HID.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🚀</div>
+          <h3>Démarrage accéléré</h3>
+          <p>Timeout BIOS/UEFI, apps inutiles au démarrage, Fast Boot, nettoyage des caches et services allégés — un PC qui redémarre sans traîner.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🧹</div>
+          <h3>13 optimisations batterie</h3>
+          <p>Modern Standby désactivé, plan d'alimentation ajusté, télémétrie coupée, GPU en mode économique, Wi-Fi en veille intelligente — tout en une seule exécution.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📊</div>
+          <h3>Rapports batterie natifs</h3>
+          <p>Génère directement sur le Bureau les rapports officiels Windows (<code>powercfg /batteryreport</code> et <code>/energy</code>) pour suivre la santé réelle de la batterie.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🛡️</div>
+          <h3>Auto-élévation silencieuse</h3>
+          <p>Le script demande lui-même les droits administrateur au lancement. Pas besoin de faire "Exécuter en tant qu'administrateur" à la main.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- LE MENU                                                       -->
+  <!-- ============================================================ -->
+  <section class="section section-alt" id="menu">
+    <div class="wrap">
+      <p class="eyebrow">Interface</p>
+      <h2>Tout depuis un seul menu numéroté</h2>
+      <p class="section-lede">
+        Pas de ligne de commande à mémoriser. Chaque action du script est un chiffre à taper.
+      </p>
+
+      <div class="menu-showcase">
+        <div class="term-window">
+          <div class="term-titlebar">
+            <span class="term-icon">⚡</span>
+            <span class="term-title">BatteryOptimizer PRO ULTRA — Menu principal</span>
+            <span class="term-dots"><i></i><i></i><i></i></span>
+          </div>
+          <div class="term-body term-body-static">
+            <ol class="menu-list" start="0">
+              <li value="1"><span class="menu-num">1</span> Configurer l'hibernation intelligente <span class="menu-tag">alerte 30s</span></li>
+              <li value="2"><span class="menu-num">2</span> Appliquer les optimisations batterie <span class="menu-tag menu-tag-reco">recommandé</span></li>
+              <li value="3"><span class="menu-num">3</span> Hiberner maintenant</li>
+              <li value="4"><span class="menu-num">4</span> Désactiver et supprimer l'hibernation auto</li>
+              <li value="5"><span class="menu-num">5</span> Voir le statut complet de la batterie</li>
+              <li value="6"><span class="menu-num">6</span> Nettoyer et accélérer le démarrage</li>
+              <li value="7"><span class="menu-num">7</span> Réparer la souris lente après hibernation</li>
+              <li value="8"><span class="menu-num">8</span> Tout en un <span class="menu-tag">optimisations + boot + hibernation</span></li>
+              <li value="9"><span class="menu-num">9</span> Gérer les seuils de court-circuit</li>
+              <li value="0"><span class="menu-num">0</span> Quitter</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="menu-note">
+          <h3>Comment fonctionne le gardien</h3>
+          <p>Une fois l'option <strong>1</strong> configurée, un script de surveillance tourne en continu, sans fenêtre visible, et vérifie en permanence :</p>
+          <ul class="check-list">
+            <li>le temps écoulé depuis ta dernière action clavier/souris ;</li>
+            <li>si l'ordinateur est sur secteur ou sur batterie ;</li>
+            <li>le niveau de charge restant, comparé à tes seuils personnalisés.</li>
+          </ul>
+          <p>Tout est journalisé dans un fichier de log consultable à tout moment, pour vérifier après coup ce qui s'est passé.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- INSTALLATION -->
+  <!-- ============================================================ -->
+  <section class="section" id="installation">
+    <div class="wrap">
+      <p class="eyebrow">Installation</p>
+      <h2>Opérationnel en moins d'une minute</h2>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <span class="step-num">01</span>
+          <h3>Télécharge le fichier</h3>
+          <p>Un seul fichier : <code>Hibernation_AND_BatterieOptimizer.bat</code>. Aucun installateur, aucune dépendance à récupérer ailleurs.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num">02</span>
+          <h3>Double-clique dessus</h3>
+          <p>Une fenêtre UAC apparaît pour l'élévation administrateur. Accepte-la : c'est automatique, rien à configurer.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num">03</span>
+          <h3>Choisis une option</h3>
+          <p>Le menu principal s'affiche. Commence par le <strong>[8] Tout en un</strong> pour une première installation complète, ou explore les options une par une.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-num">04</span>
+          <h3>Laisse le gardien veiller</h3>
+          <p>Une fois configuré, le script tourne en tâche de fond, au démarrage de session, sans aucune intervention de ta part.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- TELECHARGEMENT -->
+  <!-- ============================================================ -->
+  <section class="section section-download" id="telechargement">
+    <div class="wrap download-grid">
+      <div class="download-copy">
+        <p class="eyebrow">Télécharger</p>
+        <h2>Récupère le script, prêt à l'emploi</h2>
+        <p class="section-lede">
+          Le fichier est en clair, lisible ligne par ligne — aucune obfuscation.
+          Le code source complet est aussi disponible sur GitHub.
+        </p>
+        <ul class="download-meta">
+          <li><span>Fichier</span><code>Hibernation_AND_BatterieOptimizer.bat</code></li>
+          <li><span>Compatibilité</span>Windows 10 / 11</li>
+          <li><span>Licence</span>MIT</li>
+          <li><span>Documentation</span><code>README.md</code> inclus</li>
+        </ul>
+      </div>
+
+      <div class="download-card">
+        <div class="download-card-icon" aria-hidden="true">⚡</div>
+        <h3>Hibernation_AND_BatterieOptimizer.bat</h3>
+        <p>Script complet, auto-élévation incluse.</p>
+        <a class="btn btn-primary btn-full" href="Hibernation_AND_BatterieOptimizer.bat" download>
+          <span aria-hidden="true">↓</span> Télécharger le .bat
+        </a>
+        <a class="btn btn-ghost btn-full" href="README.md" download>
+          <span aria-hidden="true">↓</span> Télécharger le README
+        </a>
+        <a class="download-github-link" href="https://github.com/Liferenew70/batterieoptimizer.git" target="_blank" rel="noopener">
+          ou consulter le dépôt GitHub complet →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- FAQ -->
+  <!-- ============================================================ -->
+  <section class="section section-alt" id="faq">
+    <div class="wrap">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2>Avant de te lancer</h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <h3>
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              Le script demande les droits administrateur, est-ce normal ?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-panel">
+            <p>Oui — il modifie le registre, gère des tâches planifiées et pilote l'alimentation système. Il s'auto-élève silencieusement au lancement ; il te suffit d'accepter l'invite UAC.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              Puis-je changer le délai d'inactivité sans tout réinstaller ?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-panel">
+            <p>Oui. Repasse simplement par l'option <strong>[1]</strong> du menu et resaisis une nouvelle durée : le gardien est automatiquement régénéré et relancé avec la nouvelle configuration.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              Est-ce que ça fonctionne sur un PC fixe, sans batterie ?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-panel">
+            <p>Oui. Les fonctions liées à la batterie (alerte énergie, seuils, rapport batterie) sont ignorées silencieusement si aucune batterie n'est détectée ; la minuterie d'inactivité fonctionne indépendamment.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              Le compte à rebours s'annule-t-il vraiment vite au rebranchement ?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-panel">
+            <p>La détection du secteur est vérifiée chaque seconde via l'état d'alimentation natif de Windows — la méthode la plus réactive disponible, sans dépendance à un cache qui pourrait retarder la détection.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <h3>
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              Comment tout désinstaller proprement ?
+              <span class="faq-plus" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="faq-panel">
+            <p>Depuis le menu, option <strong>[4] Désactiver et Supprimer l'hibernation auto</strong> : elle arrête et supprime la tâche planifiée, tue les processus résiduels et nettoie la configuration enregistrée.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- CTA FINAL -->
+  <!-- ============================================================ -->
+  <section class="cta-final">
+    <div class="wrap cta-final-inner">
+      <h2>Ta batterie n'a plus besoin de surveillance manuelle.</h2>
+      <a class="btn btn-primary btn-large" href="Hibernation_AND_BatterieOptimizer.bat" download>
+        <span aria-hidden="true">↓</span> Télécharger BatteryOptimizer PRO ULTRA
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================ -->
+<!-- PIED DE PAGE -->
+<!-- ============================================================ -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true">⚡</span>
+      <span class="brand-name">BatteryOptimizer PRO ULTRA</span>
+      <p>Un script, un menu, zéro dépendance.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Liens du pied de page">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <a href="#menu">Le menu</a>
+      <a href="#installation">Installation</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://github.com/Liferenew70/batterieoptimizer.git" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+
+    <p class="footer-disclaimer">
+      ⚠️ Ce script modifie des paramètres système sensibles (registre, plan d'alimentation,
+      tâches planifiées, services Windows). Fourni tel quel, sans garantie — comprends les
+      options avant de les appliquer sur une machine de production.
+    </p>
+
+    <p class="footer-copy">Publié sous licence MIT.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
