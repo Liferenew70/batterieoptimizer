@@ -286,3 +286,11 @@ Ce script modifie des paramètres système sensibles (registre, plan d'alimentat
 ---
 
 *Fait avec ❤️ et beaucoup de `echo >>` pour tous ceux qui en ont marre de retrouver leur batterie à plat après une nuit en "veille".*
+
+---
+
+## Le site web
+
+Ne manquez pas d'aller sur le site du bat : https://batterieoptimizer.netlify.app/
+
+---
